@@ -1,0 +1,27 @@
+<div class="container">
+    <p-table [value]="clientes" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Contato</th>
+                <th>Ações</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-cliente>
+            <tr>
+                <td>{{cliente.nome}}</td>
+                <td>{{cliente.email}}</td>
+                <td>{{cliente.contato}}</td>
+                <td>
+                    <button color="accent" mat-raised-button>
+                        Editar
+                    </button>
+                    <button color="warn" mat-raised-button>
+                        Excluir
+                    </button>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

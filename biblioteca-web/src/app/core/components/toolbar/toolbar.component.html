@@ -1,0 +1,21 @@
+<div class="fluid-container">
+    <mat-toolbar color="primary">
+        <a [routerLink]="['/']" mat-button>
+            <img alt="Rent a Book" src="assets/logo.png" width="150">
+        </a>
+        <a [routerLink]="['/cliente']" class="me-1" mat-button
+           routerLinkActive="router-link-active">
+            Clientes
+        </a>
+        <a [routerLink]="['/autor']" class="me-1" mat-button routerLinkActive="router-link-active">
+            Autores
+        </a>
+        <a [routerLink]="['/livro']" class="me-1" mat-button routerLinkActive="router-link-active">
+            Livros
+        </a>
+        <a [routerLink]="['/']" class="mx-3" color="accent" mat-raised-button
+           routerLinkActive="router-link-active">
+            Emprestimo
+        </a>
+    </mat-toolbar>
+</div>
